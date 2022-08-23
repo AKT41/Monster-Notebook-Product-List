@@ -22,14 +22,16 @@ function App() {
   fetchtodos();
 
  }, []);
-  return (
+  return ( //akt
 
     <>
 
-    <div className='box'>
-      {datas.products?.map((product) => (
+<div className='box'>
+      {datas.products?.filter((product) => product.catIds.includes('1105,6224')).map((product) => (
         <div key={product.productId} className="todo">
-          <h3>{product.brandName}</h3>
+          <h3>{product.productName}
+          </h3>
+          
 
         </div>
       )
