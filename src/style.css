@@ -1,0 +1,43 @@
+body {
+    background-color: #1B1C1D;
+    color: white;
+}
+
+.todo{
+   
+    width: 350px;
+    height: 250px;
+    width: 33.333%;
+    padding: 0 8px 16px 8px;
+    min-height: 100px;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    
+}
+
+
+.description {
+    color: #a4a4a5;
+}
+.cards {
+    border: 1px solid #323334;
+    position: relative;
+    /* padding-bottom: 120px; */
+    /* overflow: hidden; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: #161617;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}

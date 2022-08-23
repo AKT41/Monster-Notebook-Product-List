@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState} from 'react'
+import './style.css';
+// import Image from "next/image";
 
 function App() {
   const [datas,setDatas] = useState([]);
@@ -22,18 +24,44 @@ function App() {
   fetchtodos();
 
  }, []);
-  return ( //akt
+  return ( 
 
     <>
 
 <div className='box'>
       {datas.products?.filter((product) => product.catIds.includes('1105,6224')).map((product) => (
-        <div key={product.productId} className="todo">
-          <h3>{product.productName}
-          </h3>
+
+
+<a href=''>
+    <div key={product.productId} className="todo">
+
+
+        <div className='cards'>
+             <img
+             src={product?.smallImageUrl}
+             width={253}
+             height={168}
+             layout="responsive"
+             sizes="253px"
+             alt="smallImageUrl"/>
+       </div>
+
+
+
+        
+          <h3 className='cards'>{product.productName}</h3>
+          
+          <div className='description cards'>
+        <div dangerouslySetInnerHTML={{__html: product.shortDescription}} >
+        </div>
+         </div>
+
           
 
+        <div className='cards'>   {product?.salePrice} {product?.currency}  </div>
+
         </div>
+        </a>
       )
 
       )}
