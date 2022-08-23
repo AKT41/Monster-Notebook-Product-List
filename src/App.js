@@ -29,40 +29,38 @@ function App() {
     <>
 
 <div className='box'>
-      {datas.products?.filter((product) => product.catIds.includes('1105,6224')).map((product) => (
+      {datas.products?.filter((product) => product.catIds.includes('1105')).map((product) => (
 
 
-<a href='/' target="blank" className='productsUrl'>  {/* href={product.productUrl} */}
+   
 
     <div key={product.productId} className="todo">
 
 
-        <div className='cards'>
+        <div className='images'>
              <img
-             src={product?.smallImageUrl}
+             src={product?.smallImageUrl}  // İmages
              width={253}
              height={168}
              layout="responsive"
              sizes="253px"
              alt="smallImageUrl"/>
        </div>
-
-
-
+   
+          <h3 className='titles'>{product.productName}</h3>
         
-          <h3 className='cards title'>{product.productName}</h3>
-          
-          <div className='description cards'>
+          <div className='descriptions'>
         <div dangerouslySetInnerHTML={{__html: product.shortDescription}} >
         </div>
          </div>
 
           
 
-        <div className='cards'>   {product?.salePrice} {product?.currency}  </div>
+        <div className='price'>   {product?.salePrice} {product?.currency}  </div>
 
         </div>
-        </a>
+
+        
       )
 
       )}
