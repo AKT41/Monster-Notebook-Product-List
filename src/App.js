@@ -32,7 +32,7 @@ function App() {
       {datas.products?.filter((product) => product.catIds.includes('1105,6224')).map((product) => (
 
 
-<a href=''>
+<a href={product.productUrl} target="blank">
     <div key={product.productId} className="todo">
 
 
