@@ -14,6 +14,7 @@ body {
     z-index: 1;
     height: auto;
     
+    
 }
 
 
@@ -40,4 +41,18 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+}
+
+.productsUrl , a {
+    width: 290px;
+    height: 731px;
+}
+
+.productsUrl:link {
+    text-decoration: none;
+
+}
+
+.title {
+    color: white;
 }

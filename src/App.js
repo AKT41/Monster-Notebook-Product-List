@@ -32,7 +32,8 @@ function App() {
       {datas.products?.filter((product) => product.catIds.includes('1105,6224')).map((product) => (
 
 
-<a href={product.productUrl} target="blank">
+<a href='/' target="blank" className='productsUrl'>  {/* href={product.productUrl} */}
+
     <div key={product.productId} className="todo">
 
 
@@ -49,7 +50,7 @@ function App() {
 
 
         
-          <h3 className='cards'>{product.productName}</h3>
+          <h3 className='cards title'>{product.productName}</h3>
           
           <div className='description cards'>
         <div dangerouslySetInnerHTML={{__html: product.shortDescription}} >
