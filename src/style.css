@@ -1,64 +1,249 @@
-body {
-    background-color: #1B1C1D;
-    color: white;
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.todo{
+html {
+    font-family: sans-serif;
+}
+
+body {
+    font-family: regularS, arial, sans-serif !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #1B1C1D;
+    color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: none;
+}
+
+.product-list-spacing {
+    position: relative;
+    z-index: 1;
+    width: calc(100% - 290px);
+    float: right;
+    margin-top: 50px;
+}
+
+
+.product-list{
+    flex-direction: column;
+}
+
+.box-spaceing {
+    border: 1px solid #323334;
+    position: relative;
+    /* padding-bottom: 120px; */
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: #161617;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: 290px;
+}
+
+.box-spaceing:hover {
+    border: 0.1px solid lime ;
    
-    width: 350px;
-    height: 250px;
-    padding: 15px 8px 16px 15px;
+}
+
+.card-list {
+    width: 33.333%;
+    padding: 0 8px 16px 8px;
     min-height: 100px;
     position: relative;
     z-index: 1;
     height: auto;
-    border: solid;
-    background-color: #161617;
-   display: flex;
-   flex-direction: column;
+    width: 292.656px;
+    height: 731.594px;
+    font-size: 12px;
     
+}
+
+.d-flex .Descriptions-box {
+    flex-direction: column;
+}
+
+.Descriptions-box{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    margin: 0;
     
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.compare-box {
+    position: relative;
+    z-index: 3;
+    background-color: #000;
+    border-bottom: 1px solid #323334;
+    border-top: 1px solid #323334;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 100%;
 }
 
 .images {
+    position: relative;
+}
+.image {
+    position: relative;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.price-addBasket  {
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    padding: 0px 20px 20px 20px ;
 }
 
-.descriptions {
-    color: #a4a4a5;
-}
- /* .cards {
-     border: 1px solid #323334;
-     position: relative;
-     padding-bottom: 120px; 
-      overflow: hidden;
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -ms-flex-wrap: wrap;
-     flex-wrap: wrap;
-     margin: 0;
-     background-color: #161617;
-     transition: all 0.2s ease;
-     -webkit-transition: all 0.2s ease;
-     -o-transition: all 0.2s ease;
-     height: 100%;
-     -webkit-box-orient: vertical;
-     -webkit-box-direction: normal;
-     -ms-flex-flow: column nowrap;
-     flex-flow: column nowrap;
- } */
-
-.productsUrl   a {
-    width: 290px;
-    height: 731px;
-}
-
-.productsUrl:link {
+a{
     text-decoration: none;
-
+    color: inherit;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    outline: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:link{
+    text-decoration: none;
+}
+.Descriptions > ul  {
+    flex-direction: column;
+    align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-line-clamp: 7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    position: relative;
+    line-height: .5;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    
 }
 
-.titles {
+.Descriptions > ul > li {
+    position: relative;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    list-style-position: inside;
+    color: #a4a4a5;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    font-size: 14px;    
+       
+}
+
+
+
+.product-title {
+    max-height: 45px;
+    min-height: 45px;
+    margin-bottom: 18px;
+    display: block;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #fff;
+    font-family: "regularS";
+    font-weight: normal;
+}
+.compare-checkbox {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid #a4a4a5;
+    padding: 7px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.addBasket {
+    border: 1px solid lime;
     color: white;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    width: 252px;
+    height: 50px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: "mediumS";
+    
+}
+
+.addBasket:hover {
+    background-color: lime;
+    color: black;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+/* .Descriptions {
+    font-family: "regularS";
+    margin-bottom: 20px;
+    
+    overflow: hidden;
+    line-height: 1.83;
+    color: #a4a4a5;
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+
+} */
+
+.addBasket {
+
 }
