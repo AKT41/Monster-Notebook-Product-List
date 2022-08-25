@@ -41,7 +41,7 @@ box-sizing: border-box;
 .bg-head {
     background-color: black;
     padding: 0px 60px 20px 60px;
-    max-width: 2200px;
+    /* max-width: 2200px; */
     min-width: 500px;
 
 }
@@ -104,8 +104,8 @@ a:link{
     border: none;
     outline: none;
     padding: 9px 13px;
-    height: 46px;
-    width: 381px ;
+    height: 45px;
+    width: 525px ;
     border: solid 1px #49494a;
     color: #a4a4a5;
     line-height: inherit;
@@ -224,7 +224,7 @@ input:focus {
 .allproducts {
     background-color: black;
     padding: 0px;
-    max-width: 2200px;
+    /* max-width: 2200px; */
     min-width: 500px;
     text-align: center;
     display: flex;
@@ -385,3 +385,93 @@ ol {
 .inner1 {
     width: 560px;
 }
+
+
+
+.fullWidthLanding {
+    position: relative;
+    display: block;
+}
+
+.calender-wrp {
+    display: flex;
+    position: relative;
+    background: linear-gradient(45deg,#26df2e,#2a2b30);
+    width: 100%;
+}
+
+.main-example {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.landing-page-title {
+    color: #fff;
+    display: flex;
+    font-family: 'regularS';
+    font-size: 21px;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.counter-wrapper .landing-page-title p {
+    margin-right: 80px;
+}
+
+.landing-page-title p {
+    max-width: 500px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.campaignBanner {
+    display:block !important;
+}
+
+.fullWidthLanding {
+    position:relative; display:block;
+}
+
+.fullWidthLanding > a { 
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+.landing-page-title span {
+    height: 45px;
+    padding: 13px;
+    margin: 11px 0; 
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    background: #15161A;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "medium";
+    transition: all .2s ease;
+    /* -webkit-transition: all .2s ease; */
+    }
+    
+    .logo-head  {
+        display: flex;
+        
+    }
+
+
+
+
+

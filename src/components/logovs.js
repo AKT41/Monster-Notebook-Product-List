@@ -3,7 +3,7 @@ import "./component-style.css"
 
  function Logovs() {
   return (
-    <div className=' d-flex justify-content-start bg-head'>
+    <div className=' d-flex logo-head  justify-content-start bg-head'>
 
       {/* Logo */}
       <div className='rounded bg-head align-content-center flex-wrap  d-flex justify-content-start ps-logo' >

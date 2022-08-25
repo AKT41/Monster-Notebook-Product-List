@@ -28,6 +28,10 @@ body {
     margin-top: 50px;
 }
 
+:focus {
+    outline: none;
+}
+
 
 .product-list{
     flex-direction: column;
@@ -36,7 +40,7 @@ body {
 .box-spaceing {
     border: 1px solid #323334;
     position: relative;
-    /* padding-bottom: 120px; */
+    padding-bottom: 120px;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -57,9 +61,15 @@ body {
 }
 
 .box-spaceing:hover {
-    border: 0.1px solid lime ;
+    
+    border: 0.1px groove rgb(0, 255, 0 , 0.5) ;
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
    
-}
+} 
+
+
 
 .card-list {
     width: 33.333%;
@@ -97,10 +107,10 @@ body {
     position: relative;
     z-index: 1;
     margin: 0;
-    
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
+  
 }
 
 .compare-box {
@@ -152,16 +162,8 @@ a:link{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-line-clamp: 7;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    position: relative;
-    line-height: .5;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
+    line-height: 0.5;
+    list-style: circle ;
     
 }
 
@@ -244,6 +246,3 @@ a:link{
 
 } */
 
-.addBasket {
-
-}
