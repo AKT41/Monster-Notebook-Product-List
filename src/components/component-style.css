@@ -47,7 +47,7 @@ box-sizing: border-box;
 }
 
 li {
-    display: flex;
+    /* display: flex; */
     padding: 10px 10px 6px 10px;
     -webkit-transition: color 0.35s ease-in-out;
      -o-transition: color 0.35s ease-in-out;

@@ -2,8 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState} from 'react'
 
 
-
-
  function ProductList() {
     const [datas,setDatas] = useState([]);
 
@@ -30,6 +28,12 @@ import React, { useEffect, useState} from 'react'
     <>
         
         <div className='product-list-spacing'>
+
+    <div className='col-left'> 
+        <div className='containerTest'></div> {/* test kategoriler divi */}
+
+
+
     <ul className="d-flex product-list">
 
     {datas.products?.filter((product) => product.catIds.includes('1105')).map((product) => (
@@ -69,11 +73,14 @@ import React, { useEffect, useState} from 'react'
             </div>
         </div>
 
-        <div className="price-addBasket d-flex">
-            <div className="price d-flex"> {product?.salePrice} {product?.currency} </div>
-
+     <div className="price-addBasket d-flex">
+            <div className="price salePrice d-flex"> <span>{product?.salePrice} </span>  <span> {product?.currency}  </span></div>
+           
+        <div className='BasketSpacing'>
           <a className='sepet-link' href=''>  <div className="addBasket d-flex"> <span className='text'> Sepete Ekle </span> </div> </a>
         </div>
+
+     </div>
 
 
         </div>
@@ -85,6 +92,7 @@ import React, { useEffect, useState} from 'react'
 
 
     </ul>
+    </div>
 </div>
 
 
