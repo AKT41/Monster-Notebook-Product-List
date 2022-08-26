@@ -60,7 +60,7 @@ import React, { useEffect, useState} from 'react'
                 <div className='compare-box'> <span> <span className="compare-checkbox" type="checkbox"/> </span>
                   <span>Karşılaştır</span> 
                    </div>
-
+      
                 <div className='title-spaceing'>
                    <h3 className="product-title">{product.productName}</h3>  
                    </div>
