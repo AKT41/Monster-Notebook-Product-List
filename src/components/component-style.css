@@ -274,6 +274,7 @@ input:focus {
 .sub-menu {
     display: inline-block;
     vertical-align: middle;
+    margin-top: 7px;
    
 }
 
