@@ -13,10 +13,12 @@ import "./component-style.css"
      {/* İnput Search */}
     <div className='d-flex ps-2 pe-2 justify-content-center bg-head flex-input'> 
       <div className='search d-inline-flex '>
-        {/* <a> <img src='search.svg'/></a> */}
-      <input type="text" maxLength="55"  placeholder="Arama Yap" className='input' />
+        
+      <input type="text" maxLength="55"  placeholder="Arama Yap" className='input'/> 
+
       </div>
-      </div>
+       </div>
+
 
     {/* Harici Ödeme */}
       <div className='d-flex'>
@@ -53,3 +55,5 @@ import "./component-style.css"
   )
 }
 export default Logovs;
+
+// EDİT BY AKT

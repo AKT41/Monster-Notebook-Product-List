@@ -21,3 +21,5 @@ import "./component-style.css"
   )
 }
 export default Allproducts;
+
+// EDİT BY AKT

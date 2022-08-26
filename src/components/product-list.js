@@ -30,8 +30,8 @@ import React, { useEffect, useState} from 'react'
         <div className='product-list-spacing'>
 
     <div className='col-left'> 
-        <div className='containerTest'></div> {/* test kategoriler divi */}
-
+        <div className='containerTest'> </div> {/* test kategoriler divi */}
+        
 
 
     <ul className="d-flex product-list">
@@ -74,10 +74,13 @@ import React, { useEffect, useState} from 'react'
         </div>
 
      <div className="price-addBasket d-flex">
-            <div className="price salePrice d-flex"> <span>{product?.salePrice} </span>  <span> {product?.currency}  </span></div>
+            <div className="price salePrice"> <span><b>{product?.salePrice}  {product?.currency} </b> </span>
+            <span align="left" style={{}} className='taksit'>1.234,56 TL x 12 ay'a varan Taksit Seçenekleri</span>
+
+            </div>
            
         <div className='BasketSpacing'>
-          <a className='sepet-link' href=''>  <div className="addBasket d-flex"> <span className='text'> Sepete Ekle </span> </div> </a>
+          <a className='sepet-link' href=''>  <div className="addBasket d-flex"> <span className='text' align="center"> Sepete Ekle </span> </div> </a>
         </div>
 
      </div>
@@ -100,3 +103,5 @@ import React, { useEffect, useState} from 'react'
   )
 }
 export default ProductList ;
+
+// EDİT BY AKT
