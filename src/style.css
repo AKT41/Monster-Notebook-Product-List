@@ -42,6 +42,7 @@ body {
     justify-content: center;
     align-items: baseline;
     width: 77%;
+    padding: 0px;
     
 }
 
@@ -153,7 +154,8 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 0px 20px 20px 20px ;
+    padding: 20px 20px 20px 20px ;
+    align-items: flex-start;
 }
 
 a{
@@ -176,19 +178,18 @@ a:link{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    line-height: 0.5;
+    line-height: 0.4;
     list-style: circle ;
     list-style-type:disc;
     width: 100%;
     padding-left: 20px;
+    margin-top: 5px;
 }
 .title-spaceing{
     width: 100%;
 }
-.product-title{
-    margin-top: 30px;
-    margin-left: 34px;
-}
+
+
 .Descriptions > ul > li {
     position: relative;
     -o-text-overflow: ellipsis;
@@ -212,9 +213,10 @@ a:link{
 
 
 .product-title {
-    max-height: 45px;
-    min-height: 45px;
-    
+    /* max-height: 45px;
+    min-height: 45px; */
+    margin-top: 30px;
+    margin-left: 34px;
     display: block;
     font-size: 18px;
     line-height: 1.25;
@@ -247,6 +249,7 @@ a:link{
     font-size: 16px;
     font-family: "mediumS";
     
+    
 }
 
 .addBasket:hover {
@@ -276,20 +279,46 @@ a:link{
 
 .salePrice {
     flex: 100%;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 8px;
+    margin-top: 10px;
+    font-family: "open_sansbold";
+    display: flex;
+    align-items: flex-start;   
+    flex-direction: column;
+    padding-bottom: 15px;
+
 }
 
 .BasketSpacing {
     flex: 1;
+    padding-top: 20px;
 }
 
 .containerTest {
     border: 2px solid red;
     width: 250px;
-    height: 750px;
+    position: relative;
+    height: 900px;
     margin-top: 25px;
+    position: sticky;
+    top: 20px;
+
 }
+
 
 .col-left {
     float: left;
     display: flex;
+}
+
+.taksit {
+    display: block;
+    margin-block: 10px;
+    font-size: 11.50px;
+    color: #00ff00;
+    white-space: break-spaces;
+    margin-top: 2px;
+
 }
