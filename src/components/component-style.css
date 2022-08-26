@@ -1,3 +1,6 @@
+
+/* EDİT BY AKT */
+
 *{
     font-family:arial, sans-serif !important;;
     -webkit-box-sizing: border-box;
@@ -55,11 +58,12 @@ li {
      transition: color 0.35s ease-in-out;
 
 }
-
-
-.spacing-list-prdc:hover {
-    color: lime;
+.search-icon {
+    height: 24px;
+    width: 24px;
 }
+
+
 
 ul {
     display: flex;
@@ -86,9 +90,18 @@ a{
      transition: color 0.40s ease-in-out;
 }
 
+.akt-h .header-tabsite {
+    height: 39px;
+    
+}
+
 a:link{ 
    text-decoration: none;
 
+}
+
+a {
+    text-decoration: none;    
 }
 /* 
 .ps-logo {
@@ -122,6 +135,7 @@ input:focus {
 .flex-input {
     flex-wrap: wrap ;
     align-content: center ;
+    width: 100%;
 }
 
 .akt-hrci  {
@@ -234,6 +248,7 @@ input:focus {
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
+    height: 49.5px;
 }
 
 .prdc-list {
@@ -284,6 +299,30 @@ input:focus {
      transition: color 0.35s ease-in-out;
 } 
 
+.spacing-list-prdc:hover {
+    color: lime;
+}
+
+.spacing-list-prdc:before {
+    content: '';
+  position: absolute;
+  width: 5px;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.spacing-list-prdc:after:hover { 
+
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
 ol a {
     color: #a4a4a5;
 }
@@ -307,6 +346,20 @@ ol {
         position: relative;
         z-index: 2;
        
+}
+
+.navigation {
+    background-color: black;
+    height: 45px;
+    
+}
+
+.nav-color {
+    color: #a4a4a5;
+}
+
+.next-item .navigasyonSeviye2 {
+    color: #a4a4a5;
 }
 
 .navigation-spacing {
@@ -473,10 +526,113 @@ height: 100%;
     
     .logo-head  {
         display: flex;
+        height: 89px;
         
     }
 
 
+ .mythology-bg {
+     background: url(https://img-monsternotebook.mncdn.com/UPLOAD/BANNERS/listBanner/tum-laptoplar.png) right center / cover no-repeat;
+     width: 100%;
+    height: 300px;
+    position: relative;
+    
+ }
+
+ .mythology-explanation {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    max-width: 1230px;
+}
+
+.mythology-title {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: #fff;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: normal;
+    font-family: "sboldS";
+}
+    
 
 
+.shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    /* background: #000; */
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.3; */
+}
 
+
+.mythology-text {
+    font-size: 16px;
+    color: #fff;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 78px;
+    line-height: 22px;
+    max-width: 800px;
+    text-align: justify;
+    
+    
+}
+
+.tr-mythology {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; 
+    overflow:hidden;
+}
+
+.dfazla {
+
+    font-family: "boldS";
+    color: #26df2e;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 78px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.urnListContentMore {
+
+    max-width: 800px;
+    text-align: right;
+}
+
+/* .down-icon {
+    content: "\e905";
+    display: inline-block;
+    font-family: "icomoon";
+    font-size: 12px;
+    margin-left: 10px;
+    stroke: #26df2e; */

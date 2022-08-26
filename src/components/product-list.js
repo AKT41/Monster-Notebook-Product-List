@@ -103,3 +103,5 @@ import React, { useEffect, useState} from 'react'
   )
 }
 export default ProductList ;
+
+// EDİT BY AKT

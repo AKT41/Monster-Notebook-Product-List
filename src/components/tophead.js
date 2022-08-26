@@ -2,8 +2,8 @@ import React, { Component }  from 'react';
 import "./component-style.css"
 function Tophead() {
   return (
-    <div className='bg-head header-tabsite  text-warning'>
-      <div className='d-flex justify-content-end pe-5'>
+    <div className='bg-head header-tabsite  text-warning akt-h'>
+      <div className='d-flex justify-content-end pe-5 '>
       <ul className='d-flex p-10 th-style' >
                 <li><span><a className='topHover' href='#'>0 850 255 11 11</a></span></li>
                 <li><span><a className='topHover' href='#'>Mesaj Gönder</a></span></li>
@@ -18,3 +18,5 @@ function Tophead() {
   )
 }
 export default  Tophead ;
+
+// EDİT BY AKT

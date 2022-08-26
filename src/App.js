@@ -4,9 +4,10 @@ import './style.css';
 import Tophead from './components/tophead'
 import Logovs from './components/logovs'
 import Allproducts from './components/allproducts'
-// import Navigation from './components/navigation'
+import Navigation from './components/navigation'
 import BackToSchool from './components/backToSchool'
 import ProductList from './components/product-list'
+import Mythology from './components/mythology'
 
 
 function App() {
@@ -37,10 +38,13 @@ function App() {
       <Logovs/>
       <div className='rainbown-line'/>
       <Allproducts/>
-      {/* <Navigation/> */}
+      <Mythology/>
+      <Navigation/>
       <ProductList/>
 
 </>
   )
 }
 export default App;
+
+// EDİT BY AKT
